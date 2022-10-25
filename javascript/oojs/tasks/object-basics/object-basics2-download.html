@@ -30,6 +30,26 @@
 
     // Add your code here
 
+    const band = {
+      name: 'Band name',
+      nationality: 'Indonesia',
+      genre: 'Pop',
+      members: 4,
+      formed: 2015,
+      split: false,
+      albums: [
+        {
+          name: 'Album 1',
+          released: 2017,
+        }, 
+        {
+          name: 'Album 2',
+          released: 2020,
+        },
+      ],
+    };
+
+    bandInfo = `My most favorite band is ${band.name} from ${band.nationality}. This band has ${band.members} members and the genre is ${band.genre}. ${band.name} was formed in ${band.formed} and split in ${band.split}. The first album is ${band.albums[0].name} that was release in ${band.albums[0].released}. `;
 
     // Don't edit the code below here!
 
