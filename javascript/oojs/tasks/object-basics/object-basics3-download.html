@@ -33,7 +33,20 @@
       greeting: function() {
         console.log('Meow!');
       }
-    }
+    };
+
+    cat.greeting = function () {
+      console.log(`Hello, said ${this.name} the ${this.breed}.`);
+    };
+
+    const cat2 = {
+      name: 'Bob',
+      breed: 'Abyssinian',
+      color: 'gold',
+      greeting: function () {
+        console.log(`Hello, said ${this.name} the ${this.breed}.`);
+      },
+    };
   </script>
 
 </html>
